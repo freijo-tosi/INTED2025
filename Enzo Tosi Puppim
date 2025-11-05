@@ -1,0 +1,308 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOIFk3s0LLds0QnD3zEyBj+",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/freijo-tosi/INTED2025/blob/main/Enzo%20Tosi%20Puppim\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Algoritmo e Lógica de programação"
+      ],
+      "metadata": {
+        "id": "hGlhUGk2iuq2"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##Variáveis"
+      ],
+      "metadata": {
+        "id": "7aZfo3mOi7gN"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = 5 #Isso é uma variável que recebe o valor 5\n",
+        "b = 10\n",
+        "print(a+b)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RdPqjq0wi-0u",
+        "outputId": "2585f471-22e3-4e12-d7d5-9679ef9d093c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "15\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = int(input(\"Digite um número\"))\n",
+        "b = int(input(\"Digite um número\"))\n",
+        "print(a+b)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6FqCyAGTkzEt",
+        "outputId": "6da3ec84-e9c1-4a35-a638-4b6f43b7f354"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um número22\n",
+            "Digite um número17\n",
+            "39\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##Tipos de Dados\n",
+        "int - inteiro  - para números inteiros\n",
+        "\n",
+        "float - flutuante  - para números com vírgula\n",
+        "\n",
+        "str - string (caracteres)  - para Palavras\n",
+        "\n",
+        "bool - booleano (binário)  - para verdadeira e falso"
+      ],
+      "metadata": {
+        "id": "YP1EyHzfnp4M"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = int(input(\"Digite um número: \"))\n",
+        "y = float(input(\"Digite um número com vírgula: \"))\n",
+        "z = str(input(\"Digite uma palavra: \"))\n",
+        "w = bool(input(\"Digite um valor booleano: \"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_Sf-Qa3kpJDc",
+        "outputId": "f010cdd0-a313-415d-b1d6-b1e9cb7f5501"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Digite um número: 3\n",
+            "Digite um número com vírgula: 12.3\n",
+            "Digite uma palavra: cavalo\n",
+            "Digite um valor booleano: True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(x)\n",
+        "print(y)\n",
+        "print(z)\n",
+        "print(w)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2c8raYXKq-hZ",
+        "outputId": "fcfd7c0e-c2d1-47bd-ed20-ae7eb22c9abb"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3\n",
+            "12.3\n",
+            "cavalo\n",
+            "True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "i = a + b\n",
+        "k = a- b\n",
+        "j = a * b\n",
+        "m = a / b\n",
+        "\n",
+        "print(i)\n",
+        "print(k)\n",
+        "print(j)\n",
+        "print(m)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "a1cxlnNFscVR",
+        "outputId": "d76851c3-4762-499f-928d-b00b189eac85"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "39\n",
+            "5\n",
+            "374\n",
+            "1.2941176470588236\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numero1 = int(input(\"Digite um número:\"))\n",
+        "numero2 = int(input(\"Digite outro número:\"))\n",
+        "\n",
+        "expo = numero1 ** numero2\n",
+        "\n",
+        "print(numero1  , \" elevado à \" , numero2 , \"é igual a: \" , expo)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RrySFdRvfvdf",
+        "outputId": "431c9ad0-f5d0-45e6-f70f-9db33d999ea3"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um número:10\n",
+            "Digite outro número:5\n",
+            "10  elevado à  5 é igual a:  100000\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "1- Crie um algoritmo que receba na variável nome o nome do usuário, e na idade a idade do usuário. E depois imprima na tela a seguinte frase:\n",
+        "\n",
+        "Olá, meu nome é (nome) e eu tenho (idade) anos!"
+      ],
+      "metadata": {
+        "id": "3W01jU_3jKM8"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nome1 = str(input(\"Digite um nome: \"))\n",
+        "idade2 = int(input(\"Digite uma idade: \"))\n",
+        "\n",
+        "print(\"olá, meu nome é \", nome1 , \"e eu tenho \", idade2,\"anos!\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "p7umvZU8kHOo",
+        "outputId": "20ea91a2-029c-43c1-8359-90fcfb3fe02c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um nome: Oslindo\n",
+            "Digite uma idade: 99\n",
+            "olá, meu nome é  Oslindo e eu tenho  99 anos!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Calculadora de IMC\n",
+        "peso = float(input(\"Digite seu peso: \"))\n",
+        "altura = float(input(\"Digite sua altura: \"))\n",
+        "\n",
+        "imc = peso / (altura * altura)\n",
+        "\n",
+        "print(\"seu imc é: \", imc)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "HjptU6n_o5if",
+        "outputId": "3932403d-c1c8-45df-83ba-a309dbc287fa"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite seu peso: 136\n",
+            "Digite sua altura: 1.70\n",
+            "seu imc é:  47.05882352941177\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
